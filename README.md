@@ -1,8 +1,18 @@
-# typescript-boilerplate
-Typescript and Node boilerplate template developer ready 🚀 to get started quickly with all basic tools included and configured.
+# Kata fizzbuzz
+This repository solves FizzBuzz kata as described in [Coding Dojo](https://codingdojo.org/kata/FizzBuzz/).
+
+## Kata Abstract
+Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz “.
+
+### Stage 2 - new requirements
+
+ * A number is fizz if it is divisible by 3 or if it has a 3 in it
+ * A number is buzz if it is divisible by 5 or if it has a 5 in it
 
 
-## 🧑‍🔬 Basic tools included and preconfigured to be used
+## About this repository
+
+### 🧑‍🔬 Basic tools included and preconfigured to be used
 - [Typescript 4](https://www.typescriptlang.org/)
 - [Jest 27](https://jestjs.io/docs/getting-started) testing
 - Type definitions for Node.js and Jest
@@ -14,7 +24,7 @@ Typescript and Node boilerplate template developer ready 🚀 to get started qui
 - 🔖 Available under the MIT license.
 
 
-## Fast start
+### Fast start
 This project is designed to be used with the latest LTS version of Node.js.
 
 Clone the repository:
@@ -33,7 +43,7 @@ Test your installation with preconfigured test and script
 💪 Ready for code!
 
 
-## Scripts configured
+### Scripts configured
 - `start`: run de default script
 - `build`: transpile TypeScript to es2020
 - `test`: run tests
@@ -45,8 +55,3 @@ Test your installation with preconfigured test and script
 - `docs:generate`: generate CHANGELOG and documentation in Markdown format
 - `docs:update`: generate CHANGELOG and documentation in Markdown format and commit changelog
 - `docs:generate:html`: generate CHANGELOG and documentation in HTML format
-
-## Next steps
-- Remove unused settings in config files.
-- Include GitHub Actions / GitLab CI
-
