@@ -1,3 +1,9 @@
-export function fizzBuzz(value: number): number {
-  return value
+export function fizzBuzz(value: number): string {
+  const fizz = 'Fizz'
+
+  if (value === 3) {
+    return fizz
+  }
+
+  return String(value)
 }
