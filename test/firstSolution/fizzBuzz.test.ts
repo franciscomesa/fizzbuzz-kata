@@ -1,5 +1,5 @@
-import { calculateFizzBuzz, fizzBuzz } from '../lib/firstSolution/fizzBuzzFunction'
-import { expectNumber } from './expectNumber'
+import { calculateFizzBuzz, fizzBuzz } from '../../lib/firstSolution/fizzBuzzFunction'
+import { expectNumber } from '../expectNumber'
 
 describe('Fizz buzz function should', () => {
   const fizzValue = 'Fizz'
@@ -111,9 +111,6 @@ describe('Fizz buzz function should', () => {
 
       expect(buzz).toHaveLength(expectedNumber)
     })
-
   })
-
-
 })
 
