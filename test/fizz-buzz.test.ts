@@ -3,6 +3,7 @@ import { expectNumber } from './expectNumber'
 
 describe('Fizz buzz algorithm should', () => {
   const fizzValue = 'Fizz'
+  const buzzValue = 'Buzz'
 
   it('1 value return 1', () => {
     const value = 1
@@ -27,6 +28,24 @@ describe('Fizz buzz algorithm should', () => {
 
     expect(fizzBuzzValue).not.toBe(value)
     expectNumber(fizzValue).toBe(fizzBuzzValue)
+  })
+
+  it('4 value return 4', () => {
+    const value = 3
+
+    const fizzBuzzValue = fizzBuzz(value)
+
+    expect(fizzBuzzValue).not.toBe(value)
+    expectNumber(fizzValue).toBe(fizzBuzzValue)
+  })
+
+  it('5 value return Buzz', () => {
+    const value = 5
+
+    const fizzBuzzValue = fizzBuzz(value)
+
+    expect(fizzBuzzValue).not.toBe(value)
+    expectNumber(buzzValue).toBe(fizzBuzzValue)
   })
 
 })
