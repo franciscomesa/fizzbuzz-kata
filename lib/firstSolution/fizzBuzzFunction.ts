@@ -18,7 +18,7 @@ export function calculateFizzBuzz(value: number): string {
 
 export function fizzBuzz(values: number): string[] {
   const result = []
-  for (let i = 0; i <= values; i++) {
+  for (let i = 1; i <= values; i++) {
     result.push(calculateFizzBuzz(i))
   }
   return result
