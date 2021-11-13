@@ -1,8 +1,10 @@
 export class fizzBuzz {
 
-  generate(values: number): string[] {
+  constructor(private iterations: number = 100) { }
+
+  generate(): string[] {
     const result = []
-    for (let i = 1; i <= values; i++) {
+    for (let i = 1; i <= this.iterations; i++) {
       result.push(fizzBuzz.calculateFizzBuzz(i))
     }
     return result
