@@ -1,3 +1,3 @@
 const  {fizzBuzz} = require('../build/firstSolution/fizzBuzzFunction')
 
-fizzBuzz(100)
+console.log(fizzBuzz(100))

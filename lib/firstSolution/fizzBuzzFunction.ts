@@ -16,8 +16,10 @@ export function calculateFizzBuzz(value: number): string {
   return String(value)
 }
 
-export function fizzBuzz(values: number): void {
+export function fizzBuzz(values: number): string[] {
+  const result = []
   for (let i = 0; i <= values; i++) {
-    console.log(calculateFizzBuzz(i))
+    result.push(calculateFizzBuzz(i))
   }
+  return result
 }
