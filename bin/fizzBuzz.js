@@ -1,5 +1,3 @@
-const  {calculateFizzBuzz} = require('../build/firstSolution/fizzBuzzFunction')
+const  {fizzBuzz} = require('../build/firstSolution/fizzBuzzFunction')
 
-for (var i = 0; i <= 100; i++) {
-  console.log(calculateFizzBuzz(i))
-}
+fizzBuzz(100)
