@@ -1,11 +1,12 @@
-interface CalculateRule {
+export interface CalculateRule {
   matches (value: number): boolean
-  parse (value: number): string
+  parse (): string
 }
 
 
 export class fizzRule implements CalculateRule {
   matches(value: number): boolean {
+    console.log(value % 3 === 0 || String(value).indexOf('3') >= 0)
     return value % 3 === 0 || String(value).indexOf('3') >= 0
   }
 

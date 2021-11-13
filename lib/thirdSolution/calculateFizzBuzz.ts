@@ -1,22 +1,22 @@
-import { buzzRule, fizzBuzzRule, fizzRule } from "."
+import { CalculateRule } from "."
 
 
 export class calculateFizzBuzz {
-  private static fizz = new fizzRule()
-  private static buzz = new buzzRule()
-  private static fizzBuzz = new fizzBuzzRule()
+  private rules: CalculateRule[] = []
 
   constructor(private readonly valueNumber: number) {  }
 
+  addRule(rule: CalculateRule): void {
+    this.rules.push(rule)
+  }
   get value(): string {
-    if (calculateFizzBuzz.fizzBuzz.matches(this.valueNumber))
-      return calculateFizzBuzz.fizzBuzz.parse()
-    if (calculateFizzBuzz.fizz.matches(this.valueNumber))
-      return calculateFizzBuzz.fizz.parse()
-    if (calculateFizzBuzz.buzz.matches(this.valueNumber))
-      return calculateFizzBuzz.buzz.parse()
+    for (const rule of this.rules) {
+      if (rule.matches(this.valueNumber)) {
+        return rule.parse()
+      }
+    }
 
     return String(this.valueNumber)
-  }
+    }
 }
 
