@@ -48,4 +48,23 @@ describe('Fizz buzz algorithm should', () => {
     expectNumber(buzzValue).toBe(fizzBuzzValue)
   })
 
+  it('6 value return Fizz', () => {
+    const value = 6
+
+    const fizzBuzzValue = fizzBuzz(value)
+
+    expect(fizzBuzzValue).not.toBe(value)
+    expectNumber(fizzValue).toBe(fizzBuzzValue)
+  })
+
+  it('10 value return Buzz', () => {
+    const value = 10
+
+    const fizzBuzzValue = fizzBuzz(value)
+
+    expect(fizzBuzzValue).not.toBe(value)
+    expectNumber(buzzValue).toBe(fizzBuzzValue)
+  })
+
+
 })
