@@ -1,9 +1,9 @@
-export class FizzBuzz {
+export class fizzBuzz {
 
   generate(values: number): string[] {
     const result = []
     for (let i = 1; i <= values; i++) {
-      result.push(FizzBuzz.calculateFizzBuzz(i))
+      result.push(fizzBuzz.calculateFizzBuzz(i))
     }
     return result
   }
