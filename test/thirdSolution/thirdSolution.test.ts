@@ -1,4 +1,4 @@
-import { buzzRule, calculateFizzBuzz, fizzBuzzRule, fizzRule } from '../../lib/thirdSolution'
+import { buzzRule, numberMutator, fizzBuzzRule, fizzRule } from '../../lib/thirdSolution'
 import { fizzBuzz } from '../../lib/thirdSolution/fizzBuzz'
 
 describe('Fizz Buzz second step should', () => {
@@ -10,7 +10,7 @@ describe('Fizz Buzz second step should', () => {
     new fizzRule(),
     new buzzRule()
     ]
-  const calculate = new calculateFizzBuzz(rules)
+  const calculate = new numberMutator(rules)
 
   describe('bucle with 100 iterations should', () => {
     const iterations = 100

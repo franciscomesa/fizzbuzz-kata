@@ -1,8 +1,8 @@
-import { CalculateRule } from "."
+import { ModifyRule } from "."
 
 
-export class calculateFizzBuzz {
-  constructor(private readonly rules: CalculateRule[] = []) {}
+export class numberMutator {
+  constructor(private readonly rules: ModifyRule[] = []) {}
 
   parse(value: number): string {
     for (const rule of this.rules) {

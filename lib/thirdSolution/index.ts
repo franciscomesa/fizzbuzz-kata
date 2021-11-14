@@ -1,3 +1,3 @@
-export * from './calculateFizzBuzz'
-export * from './calculateRule'
+export * from './numberMutator'
+export * from './modifyRule'
 export * from './fizzBuzz'

@@ -1,10 +1,10 @@
-export interface CalculateRule {
+export interface ModifyRule {
   matches (value: number): boolean
   parse (): string
 }
 
 
-export class fizzRule implements CalculateRule {
+export class fizzRule implements ModifyRule {
   matches(value: number): boolean {
     return value % 3 === 0 || String(value).indexOf('3') >= 0
   }
@@ -14,7 +14,7 @@ export class fizzRule implements CalculateRule {
   }
 }
 
-export class buzzRule implements CalculateRule {
+export class buzzRule implements ModifyRule {
     matches(value: number): boolean {
       return value % 5 === 0 || String(value).indexOf('5') >= 0
     }
@@ -24,7 +24,7 @@ export class buzzRule implements CalculateRule {
     }
 }
 
-export class fizzBuzzRule implements CalculateRule {
+export class fizzBuzzRule implements ModifyRule {
   matches(value: number): boolean {
     return value % 3 === 0 && value % 5 === 0
   }
