@@ -8,6 +8,6 @@ const rules =  [
   new buzzRule()
   ]
 const calculate = new calculateFizzBuzz(rules)
-const fizzBuzzGame = new fizzBuzz(calculateFizzBuzz)
+const fizzBuzzGame = new fizzBuzz(calculate)
 
 console.log(fizzBuzzGame.generate())
