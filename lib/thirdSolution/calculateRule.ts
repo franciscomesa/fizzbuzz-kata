@@ -6,7 +6,6 @@ export interface CalculateRule {
 
 export class fizzRule implements CalculateRule {
   matches(value: number): boolean {
-    console.log(value % 3 === 0 || String(value).indexOf('3') >= 0)
     return value % 3 === 0 || String(value).indexOf('3') >= 0
   }
 
