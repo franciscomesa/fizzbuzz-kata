@@ -4,13 +4,12 @@ import { numberMutator } from "./numberMutator"
 @autoInjectable()
 export class fizzBuzz {
   constructor(
-    @inject('numberMutator') private numberMutator: numberMutator,
-    private iterations: number = 100
+    @inject('numberMutator') private numberMutator: numberMutator
     ) { }
 
-  generate(): string[] {
+  generate(iterations = 100): string[] {
     const result: string[] = []
-    for (let i = 1; i <= this.iterations; i++) {
+    for (let i = 1; i <= iterations; i++) {
       const value = this.numberMutator.parse(i)
       result.push(value)
     }
