@@ -1,13 +1,20 @@
+import { buzzRule, calculateFizzBuzz, fizzBuzzRule, fizzRule } from '../../lib/thirdSolution'
 import { fizzBuzz } from '../../lib/thirdSolution/fizzBuzz'
 
 describe('Fizz Buzz second step should', () => {
   const fizzValue = 'Fizz'
   const buzzValue = 'Buzz'
   const fizzbuzzValue = 'FizzBuzz'
+  const rules =  [
+    new fizzBuzzRule(),
+    new fizzRule(),
+    new buzzRule()
+    ]
+  const calculate = new calculateFizzBuzz(rules)
 
   describe('bucle with 100 iterations should', () => {
     const iterations = 100
-    const results = new fizzBuzz().generate()
+    const results = new fizzBuzz(calculate).generate()
 
     it('return 100 values', () => {
       expect(results).toHaveLength(iterations)
