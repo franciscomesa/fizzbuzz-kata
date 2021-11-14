@@ -1,6 +1,6 @@
 import { fizzBuzz } from '../../lib/secondSolution/fizzBuzz'
 
-describe('Fizz Buzz second step should', () => {
+describe('Fizz Buzz Class with second step should', () => {
   const fizzValue = 'Fizz'
   const buzzValue = 'Buzz'
   const fizzbuzzValue = 'FizzBuzz'
