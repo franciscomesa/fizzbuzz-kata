@@ -1,7 +1,7 @@
 import { buzzRule, numberMutator, fizzBuzzRule, fizzRule } from '../../lib/thirdSolution'
 import { fizzBuzz } from '../../lib/thirdSolution/fizzBuzz'
 
-describe('Fizz Buzz second step should', () => {
+describe('Fizz Buzz classes with single responsability and second step should', () => {
   const fizzValue = 'Fizz'
   const buzzValue = 'Buzz'
   const fizzbuzzValue = 'FizzBuzz'
