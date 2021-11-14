@@ -1,3 +1,4 @@
+import { container } from 'tsyringe'
 import { buzzRule, numberMutator, fizzBuzzRule, fizzRule } from '../../lib/thirdSolutionInjectable'
 import { fizzBuzz } from '../../lib/thirdSolutionInjectable/fizzBuzz'
 
@@ -11,10 +12,16 @@ describe('Fizz Buzz second step should', () => {
     new buzzRule()
     ]
   const calculate = new numberMutator(rules)
+  container.registerInstance('numberMutator', calculate)
+  const game = container.resolve(fizzBuzz)
+
+  afterAll(() => {
+    container.clearInstances()
+  })
 
   describe('bucle with 100 iterations should', () => {
     const iterations = 100
-    const results = new fizzBuzz(calculate).generate()
+    const results = game.generate()
 
     it('return 100 values', () => {
       expect(results).toHaveLength(iterations)

@@ -1,6 +1,7 @@
+import {injectable} from "tsyringe"
 import { ModifyRule } from "."
 
-
+@injectable()
 export class numberMutator {
   constructor(private readonly rules: ModifyRule[] = []) {}
 
