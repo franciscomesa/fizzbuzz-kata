@@ -1,8 +1,8 @@
-import { ModifyRule } from "."
+import { Rule } from "."
 
 
-export class NumberMutator {
-  constructor(private readonly rules: ModifyRule[] = []) {}
+export class ApplyRule {
+  constructor(private readonly rules: Rule[] = []) {}
 
   parse(value: number): string {
     const rule = this.rules.find(rule => rule.matches(value))

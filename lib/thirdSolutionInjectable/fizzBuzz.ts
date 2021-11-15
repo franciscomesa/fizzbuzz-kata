@@ -1,10 +1,10 @@
 import { autoInjectable, inject } from "tsyringe"
-import { NumberMutator } from "./numberMutator"
+import { ApplyRule } from "./applyRule"
 
 @autoInjectable()
 export class FizzBuzz {
   constructor(
-    @inject('numberMutator') private numberMutator: NumberMutator
+    @inject('applyRule') private numberMutator: ApplyRule
     ) { }
 
   generate(iterations = 100): string[] {

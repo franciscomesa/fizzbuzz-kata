@@ -1,8 +1,8 @@
-import { NumberMutator } from "./numberMutator"
+import { ApplyRule } from "./applyRule"
 
 export class FizzBuzz {
   constructor(
-    private parser: NumberMutator,
+    private parser: ApplyRule,
     private iterations: number = 100
     ) { }
 

@@ -1,5 +1,5 @@
 import { container } from 'tsyringe'
-import { BuzzRule, NumberMutator, FizzBuzzRule, FizzRule } from '../../lib/thirdSolutionInjectable'
+import { BuzzRule, ApplyRule, FizzBuzzRule, FizzRule } from '../../lib/thirdSolutionInjectable'
 import { FizzBuzz } from '../../lib/thirdSolutionInjectable/fizzBuzz'
 
 describe('Fizz Buzz second step should', () => {
@@ -11,8 +11,8 @@ describe('Fizz Buzz second step should', () => {
     new FizzRule(),
     new BuzzRule()
     ]
-  const calculate = new NumberMutator(rules)
-  container.registerInstance('numberMutator', calculate)
+  const calculate = new ApplyRule(rules)
+  container.registerInstance('applyRule', calculate)
   const game = container.resolve(FizzBuzz)
 
   afterAll(() => {

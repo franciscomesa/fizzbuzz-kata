@@ -1,5 +1,5 @@
 import 'reflect-metadata'
 
-export * from './numberMutator'
-export * from './modifyRule'
+export * from './applyRule'
+export * from './rule'
 export * from './fizzBuzz'

@@ -1,9 +1,9 @@
 import {injectable} from "tsyringe"
-import { ModifyRule } from "."
+import { Rule } from "."
 
 @injectable()
-export class NumberMutator {
-  constructor(private readonly rules: ModifyRule[] = []) {}
+export class ApplyRule {
+  constructor(private readonly rules: Rule[] = []) {}
 
   parse(value: number): string {
     for (const rule of this.rules) {
