@@ -1,8 +1,8 @@
-import { numberMutator } from "./numberMutator"
+import { NumberMutator } from "./numberMutator"
 
-export class fizzBuzz {
+export class FizzBuzz {
   constructor(
-    private parser: numberMutator,
+    private parser: NumberMutator,
     private iterations: number = 100
     ) { }
 

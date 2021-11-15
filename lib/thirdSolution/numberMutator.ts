@@ -1,7 +1,7 @@
 import { ModifyRule } from "."
 
 
-export class numberMutator {
+export class NumberMutator {
   constructor(private readonly rules: ModifyRule[] = []) {}
 
   parse(value: number): string {

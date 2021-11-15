@@ -1,11 +1,11 @@
-export class fizzBuzz {
+export class FizzBuzz {
 
   constructor(private iterations: number = 100) { }
 
   generate(): string[] {
     const result = []
     for (let i = 1; i <= this.iterations; i++) {
-      result.push(fizzBuzz.calculateFizzBuzz(i))
+      result.push(FizzBuzz.calculateFizzBuzz(i))
     }
     return result
   }

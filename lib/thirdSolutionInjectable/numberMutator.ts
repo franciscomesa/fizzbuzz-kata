@@ -2,7 +2,7 @@ import {injectable} from "tsyringe"
 import { ModifyRule } from "."
 
 @injectable()
-export class numberMutator {
+export class NumberMutator {
   constructor(private readonly rules: ModifyRule[] = []) {}
 
   parse(value: number): string {

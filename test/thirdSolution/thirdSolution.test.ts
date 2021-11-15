@@ -1,20 +1,20 @@
-import { buzzRule, numberMutator, fizzBuzzRule, fizzRule } from '../../lib/thirdSolution'
-import { fizzBuzz } from '../../lib/thirdSolution/fizzBuzz'
+import { BuzzRule, NumberMutator, FizzBuzzRule, FizzRule } from '../../lib/thirdSolution'
+import { FizzBuzz } from '../../lib/thirdSolution/fizzBuzz'
 
 describe('Fizz Buzz classes with single responsability and second step should', () => {
   const fizzValue = 'Fizz'
   const buzzValue = 'Buzz'
   const fizzbuzzValue = 'FizzBuzz'
   const rules =  [
-    new fizzBuzzRule(),
-    new fizzRule(),
-    new buzzRule()
+    new FizzBuzzRule(),
+    new FizzRule(),
+    new BuzzRule()
     ]
-  const calculate = new numberMutator(rules)
+  const calculate = new NumberMutator(rules)
 
   describe('bucle with 100 iterations should', () => {
     const iterations = 100
-    const results = new fizzBuzz(calculate).generate()
+    const results = new FizzBuzz(calculate).generate()
 
     it('return 100 values', () => {
       expect(results).toHaveLength(iterations)

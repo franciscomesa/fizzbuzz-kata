@@ -4,7 +4,7 @@ export interface ModifyRule {
 }
 
 
-export class fizzRule implements ModifyRule {
+export class FizzRule implements ModifyRule {
   matches(value: number): boolean {
     return value % 3 === 0 || String(value).indexOf('3') >= 0
   }
@@ -14,7 +14,7 @@ export class fizzRule implements ModifyRule {
   }
 }
 
-export class buzzRule implements ModifyRule {
+export class BuzzRule implements ModifyRule {
     matches(value: number): boolean {
       return value % 5 === 0 || String(value).indexOf('5') >= 0
     }
@@ -24,7 +24,7 @@ export class buzzRule implements ModifyRule {
     }
 }
 
-export class fizzBuzzRule implements ModifyRule {
+export class FizzBuzzRule implements ModifyRule {
   matches(value: number): boolean {
     return value % 3 === 0 && value % 5 === 0
   }

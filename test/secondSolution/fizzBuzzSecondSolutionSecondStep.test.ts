@@ -1,4 +1,4 @@
-import { fizzBuzz } from '../../lib/secondSolution/fizzBuzz'
+import { FizzBuzz } from '../../lib/secondSolution/fizzBuzz'
 
 describe('Fizz Buzz Class with second step should', () => {
   const fizzValue = 'Fizz'
@@ -7,7 +7,7 @@ describe('Fizz Buzz Class with second step should', () => {
 
   describe('bucle with 100 iterations should', () => {
     const iterations = 100
-    const results = new fizzBuzz().generate()
+    const results = new FizzBuzz().generate()
 
     it('return 100 values', () => {
       expect(results).toHaveLength(iterations)
